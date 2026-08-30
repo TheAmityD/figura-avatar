@@ -800,6 +800,14 @@ local defaultClothesAction = clothesPage:newAction(1)
         pings.changeClothes("model.blightHand-trans", true)
     end)
 
+local frogFemboyClothesAction = clothesPage:newAction(2)
+    :setTitle("Femboy Hoodie")
+    :setItem("minecraft:white_tulip")
+    :onLeftClick(function()
+        currentClothes = "model.femboyHoodie"
+        pings.changeClothes("model.femboyHoodie", true)
+    end)
+
 local labCoatClothesAction = clothesPage:newAction(3)
     :setTitle("Lab Coat")
     :setItem("minecraft:white_wool")
